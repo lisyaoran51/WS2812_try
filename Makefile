@@ -1,8 +1,8 @@
 
 obj-m	+= hello.o
 
-all:
-	make -C ../../linux-source M=$(PWD) modules
+all drivers:
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 
 clean:
-	make -C ../../linux-source M=$(PWD) clean
+	make -C  /lib/modules/$(shell uname -r)/build M=$(PWD) clean
