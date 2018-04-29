@@ -11,7 +11,7 @@ static int __init hello_init(void){
 }
 
 static void __exit hello_exit(void){
-	prink("\n");
+	printk("\n");
 
 }
 
